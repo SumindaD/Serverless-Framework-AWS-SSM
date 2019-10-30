@@ -1,0 +1,17 @@
+service: serverless-ssm
+frameworkVersion: "1.48.2"
+
+provider:
+  name: aws
+  runtime: python3.7
+  region: eu-west-1
+  iamManagedPolicies:
+  - arn:aws:iam::aws:policy/AmazonSSMFullAccess
+
+functions:
+  hello:
+    handler: handler.handle
+    events:
+      - http:
+          path: testssm
+          method: get
