@@ -1,4 +1,4 @@
-# HAnalytics OCR
+# Serverless Framework - AWS SSM Parameters
 
 > This repo contains a Serverless Framework project to showcase AWS SSM service parameter retrieve
 
